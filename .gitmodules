@@ -1,0 +1,3 @@
+[submodule "gamr-api"]
+	path = gamr-api
+	url = https://github.com/jwalsh/gamr-api.git
