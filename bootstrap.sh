@@ -9,5 +9,8 @@ if ! [ -L /var/www ]; then
   ln -fs /vagrant/gamr-www /var/www
 fi
 
+sudo a2enmod proxy
+sudo service apache2 restart
+
 sudo pip install flask
 # cd /vagrant/gamr-api

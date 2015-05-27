@@ -8,6 +8,6 @@
 Vagrant.configure(2) do |config|
   config.vm.box = "hashicorp/precise64"
   config.vm.provision :shell, path: "bootstrap.sh"
-  config.vm.network :forwarded_port, host: 4567, guest: 80
-  config.vm.network :forwarded_port, host: 5678, guest: 5000
+  config.vm.network :forwarded_port, host: 4567, guest: 80, auto_correct: true
+  config.vm.network :forwarded_port, host: 4680, guest: 5000, auto_correct: true
 end
